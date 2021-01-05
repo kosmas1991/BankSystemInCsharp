@@ -23,13 +23,13 @@ namespace BankSystem
             Console.WriteLine("Bank " + Name + " created!");
         }
 
-        public string getBranchByName(string onoma)
+        public Branch getBranchByName(string onoma)
         {
             foreach (Branch branch in branches)
             {
                 if(branch.Name.Equals(onoma))
                 {
-                    return branch.Name;
+                    return branch;
                 }
             }
             return null;
